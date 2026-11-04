@@ -1,0 +1,9 @@
+# GPIA - capa de captura
+# pip install -r requirements.txt
+
+# Solo es dependencia real en Linux/X11. En Windows el backend usa ctypes
+# (libreria estandar) y no necesita nada de aqui.
+python-xlib>=0.33; sys_platform != "win32"
+
+# Tests
+pytest>=8.0

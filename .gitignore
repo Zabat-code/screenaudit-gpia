@@ -1,0 +1,58 @@
+# Datos de empleado / grabaciones (privacidad [region]) - NO commitear
+*.jsonl
+rec_*.mp4
+sesion_*.mp4
+calidad_*.json
+calidad_*.txt
+gp_log_*.jsonl
+
+# Model cache (pesado, descargable)
+hf_cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs locales
+*.log
+panel.log
+step2_stdout.txt
+capacidades.log
+grabacion.log
+logs/
+
+# Imagenes / reportes de analisis (datos)
+keyframe_*.jpg
+reporte.json
+step2.json
+step2.log
+veredicto_*.txt
+
+# ffmpeg binario (242MB > limite 100MB de GitHub). Se descarga aparte.
+ffmpeg.exe
+
+# Local secrets, captures and state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config_cliente.json
+config_empresa.json
+config.local.json
+*.sqlite
+*.sqlite3
+*.db
+*.jsonl
+*.mp4
+*.mkv
+*.webm
+*.wav
+sessions/
+recordings/
+.venv/
+.pytest_cache/
+
+# OS
+Thumbs.db
+.DS_Store
